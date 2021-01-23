@@ -1,0 +1,223 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;max-width: 100%;height: auto;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+.zad1{
+  padding: 20px;
+  font-size: 30px;
+}
+.zad1p1{
+  margin: 10px;
+}
+.zad1p1 :hover{
+  color: red;
+  text-decoration: underline overline;
+  
+} 
+.zad1p2{
+  margin: 10px;
+}
+.zad1p2 :hover{
+  color: rgb(71, 71, 71);
+  text-shadow: 1px 1px 2px black, 0 0 0 rgb(71, 71, 71)
+}
+.zad2{
+  width: 500px;
+  margin: 0 20px;
+  padding: 10px;
+  border: 1px solid red;
+  background-image: url('../img/Layer\ 24.png');
+  background-repeat: repeat-y;
+}
+.zad3{
+  width: 500px;
+  margin: 20px 20px;
+  padding: 10px;
+  border: 1px solid red;
+  background-image: url('../img/Layer\ 24.png');
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.zad4>h1{
+  font-size: 30px;
+  margin: 0 40px;
+  text-align: center;
+  color: red;
+  font-weight: 30px;
+}
+.zad4 .zad4h1:before, .zad4h1:after {
+  content: "Yay!"; 
+  font-family: 'Dancing Script', cursive; 
+  color: #f7b21c;  
+  text-shadow: 1px 1px 2px grey;  
+} 
+.zad4 .zad4h1:before {  
+  margin-right: 30px;  
+}  
+.zad4> .zad4h1:after {  
+  margin-left: 30px;  
+}
+.zad4{
+  margin-bottom:20px;
+}
+.zad5 .zad5h1{
+  font-size: 30px;
+  margin: 0 40px;
+  text-align: center;
+  color: red;
+  font-weight: bold; 
+}
+.zad5 .zad5h1:before{
+  content: url(../img/Layer\ 24.png); 
+  font-family: 'Dancing Script', cursive; 
+  color: #f7b21c;  
+  text-shadow: 1px 1px 2px grey; 
+  margin: 30px;  
+} 
+.zad6{
+  text-align: center;
+  margin: 20px 0;
+}
+.zad6 >img{
+  width: 300px;
+  height: 300px;
+  border-radius: 200%;
+}
+.zad7{
+  background-color: rgb(220,241,232);
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.zad7 .header{
+  background-color: rgb(119,119,119);
+  height: 30px;
+  font-size: 25px;
+}
+.zad7 .content{
+  display: flex;
+  flex-direction: rov;
+}
+.zad7 .img{
+  width: 300px;
+}
+.zad7 .img p{
+  padding: 10px;
+}
+.zad7 .img img{
+  width: 300px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+.zad7 .line{
+  width: 15px;
+  border: 8px solid rgb(44,49,49);
+  border-style: dashed;
+  margin: 0 5px 0 10px;
+}
+.zad7 .list{
+  padding: 5px;
+}
+.zad7 .list li{
+  margin-bottom: 15px;
+}
+.zad8{
+  margin:  15px auto;
+  width: 200px;
+  height: 200px;
+  border: 1px solid blue;
+  border-radius: 10%;
+  box-shadow: 1px 1px 2px black, 0 0 1em ;
+}
+.zad8 .img{
+  padding: 25px;
+}
+.zad8 .img img{
+  width: 150px;
+  height: 150px;
+}
+.zad9{
+  width: 40%;
+  border: 1px solid gray;
+  border-style: dashed;
+  padding: 10px 10px 5px 10px;
+  margin: 20px;
+}
+.zad9 .icon li{
+  border: 1px solid rgb(0,129,231);
+  font-size: 25px;
+  width: 60%;
+  padding: 5px;
+  margin-bottom: 5px;
+  background-color: rgb(0,129,231); 
+  border-radius: 10px;
+}
+.zad9 a{
+    color: white;
+    display: table;
+    width: 100%;
+}
+.zad9 a span{
+  color: rgb(0,129,231) ;
+  transition: all 0.5s;
+}
+
+.zad9 li:hover{
+  background-color: white; 
+  transition: all 0.5s;
+}
+.zad9 li a:hover{
+  color: rgb(0,129,231);
+  transition: all 0.5s;
+}
+.zad10{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: 3px solid gray;
+  padding: 10px 10px 0;
+  margin: 10px;
+  border-style: dashed;
+}
+.zad10 .img{
+  width: 30%;
+  height: 100%;
+  margin-bottom: 10px;
+}
